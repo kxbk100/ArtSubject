@@ -1,0 +1,48 @@
+[ 2017-10-12T15:56:00+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:03:08+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:28:47+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001184s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:32:13+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:33:28+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:35:05+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:42:09+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+ERR: 无法加载模块:Jackbox
+
+[ 2017-10-12T16:42:46+08:00 ] ::1 /subject/index.php/jackbox/css/jackbox.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+ERR: 无法加载模块:Jackbox
+

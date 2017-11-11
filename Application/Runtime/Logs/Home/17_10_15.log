@@ -1,0 +1,143 @@
+[ 2017-10-15T22:42:04+08:00 ] ::1 /subject/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.081664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033634s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.2792s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.1470s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.2671s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.2076s ]
+SQL: SELECT * FROM `picture` ORDER BY id  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `news` ORDER BY istop desc,time desc LIMIT 9   [ RunTime:0.0319s ]
+SQL: SELECT * FROM `notice` WHERE ( type='0' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0662s ]
+SQL: SELECT * FROM `notice` WHERE ( type='1' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `student` ORDER BY time desc LIMIT 8   [ RunTime:0.0754s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.080242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.080398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.663334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.663450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.148477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.148617s ]
+
+[ 2017-10-15T22:42:37+08:00 ] ::1 /subject/index.php/Home/News/showNews/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `news` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT MAX(id) AS tp_Max FROM `news` LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `notice` WHERE ( type='0' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `notice` WHERE ( type='1' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `news` ORDER BY time desc LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003069s ]
+
+[ 2017-10-15T22:43:32+08:00 ] ::1 /subject/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0617s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `picture` ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `news` ORDER BY istop desc,time desc LIMIT 9   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `notice` WHERE ( type='0' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `notice` WHERE ( type='1' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `student` ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2017-10-15T22:45:09+08:00 ] ::1 /subject/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003786s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `picture` ORDER BY id  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `news` ORDER BY istop desc,time desc LIMIT 9   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `notice` WHERE ( type='0' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `notice` WHERE ( type='1' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `student` ORDER BY time desc LIMIT 8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2017-10-15T22:45:44+08:00 ] ::1 /subject/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `picture` ORDER BY id  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `news` ORDER BY istop desc,time desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `notice` WHERE ( type='0' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `notice` WHERE ( type='1' ) ORDER BY istop desc,time desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `student` ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
