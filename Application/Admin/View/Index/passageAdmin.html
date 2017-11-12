@@ -68,21 +68,21 @@
 		<div id="content">
 
 			<div class="container">
-				<h2 class="text-center">2015届毕业生学生信息</h2>
+				<h2 class="text-center">{$year}届毕业生学生信息</h2>
 				<div class="row">
 
 					<div class="col-xs-4 pull-left">
 						<form class="form-inline" action="" method="get">
 							<label style="margin-left: 30px;">请选择毕业年份：</label>
-							<select> 
-									<option value="0">2015</option> 
-									<option value="1">2016</option> 
-									<option value="1">2017</option>
+							<select onchange="goto(this)"> 
+									<option value="2015" id="2015">2015</option> 
+									<option value="2016" id="2016">2016</option> 
+									<option value="2017" id="2017">2017</option>
 							</select>
 						</form>
 					</div>
 					<div class="col-xs-8 pull-right">
-						<button type="button" class="btn btn-primary" style="margin-bottom: 10px;">下载表格</button>
+						<button type="button" class="btn btn-primary" style="margin-bottom: 10px;" onclick="window.location.href='{$Think.config.goto}Admin/Index/expStudents'">下载表格</button>
 					</div>
 				</div>
 				<table class="table table-bordered table-striped">
@@ -98,7 +98,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<volist name="result2" id="student">
+						<volist name="list" id="student">
 							<tr>
 								<td>{$student.id}</td>
 								<td>{$student.name}</td>
@@ -159,7 +159,23 @@
 
 	<script src="{$Think.config.HOMETOOLS}js/libs/bootstrap/bootstrap.min.js"></script>
 
+	<script type="text/javascript">
+		function goto(year){
+			var selectedOption=year.options[year.selectedIndex];
+			if(selectedOption.value == "2015"){
+				//TODO 跳转
+				window.location.href="/ArtSubject/index.php/Admin/Index/passageAdmin?year=2015";
+			}else if(selectedOption.value == "2016"){
+				window.location.href="/ArtSubject/index.php/Admin/Index/passageAdmin?year=2016";
+			}else if(selectedOption.value == "2017"){
+				window.location.href="/ArtSubject/index.php/Admin/Index/passageAdmin?year=2017";
+			}
+		}
 
+		var year="<?php echo $year;?>";
+		document.getElementById(year).selected = "true";
+
+	</script>
 
 
 </body>
