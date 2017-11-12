@@ -82,7 +82,7 @@
 						</form>
 					</div>
 					<div class="col-xs-8 pull-right">
-						<button type="button" class="btn btn-primary" style="margin-bottom: 10px;" onclick="window.location.href='{$Think.config.goto}Admin/Index/expStudents'">下载表格</button>
+						<button type="button" class="btn btn-primary" style="margin-bottom: 10px;" onclick="window.location.href='{$Think.config.goto}Admin/Index/download/id/{$year}'">下载表格</button>
 					</div>
 				</div>
 				<table class="table table-bordered table-striped">
@@ -106,7 +106,7 @@
 								<td>{$student.major_class}</td>
 								<td>{$student.phone}</td>
 								<td>{$student.id_number}</td>
-								<td>{$student.sign}</td>
+								<td><if condition="$student.is_searched eq 1">已查询<else/>未查询</if></td>
 							</tr>
 						</volist>
 					</tbody>
