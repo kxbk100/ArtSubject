@@ -83,7 +83,7 @@
 														</div>
 														<div class="controls">
 															<input type="text" required="required" class="input-small" id="firstname" name="verify" style="margin-left:-65px;margin-right: 5px;width:110px;">
-															<img width="25%" class="left15" height="100" alt="验证码" src="{:U('Home/Index/verify_c',array())}" title="点击刷新">
+															<img width="25%" id="verify" class="left15" height="100" alt="验证码" src="{$Think.config.GOTO}Home/Index/verify" title="点击刷新" onclick="change()">
 														</div>
 													</div>
 													<!-- /control-group -->
@@ -165,6 +165,10 @@
 			//aCity[parseInt(sId.substr(0,2))]+","+sBirthday+","+(sId.substr(16,1)%2?"男":"女");//此次还可以判断出输入的身份证号的人性别
 			return true;
 		} 
+
+		function change(){ 
+			document.getElementById("verify").src='{$Think.config.GOTO}/Home/Index/verify'
+		}
 	</script>
 </body>
 </html>

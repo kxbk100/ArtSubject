@@ -57,7 +57,7 @@ class IndexController extends Controller {
 	}
  
 	//验证码生成  
-	public function verify_c(){  
+	public function verify(){  
 	    $Verify = new \Think\Verify();  
 	    $Verify->fontSize = 18;  
 	    $Verify->length   = 4;  
