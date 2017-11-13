@@ -42,6 +42,7 @@ class IndexController extends Controller {
 				if($result[0]['id_number'] == $id_number){
 					$update['id'] = $result[0]['id'];
 					$update['phone'] = $phone;
+					$result[0]['phone'] = $phone;
 					$update['is_searched'] = 1;
 					$data->save($update); 
 					$this->assign('result',$result);
