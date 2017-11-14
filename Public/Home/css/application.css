@@ -20,6 +20,28 @@
 .yahoo2 a.prev{border:#ccdbe4 2px solid;margin:0px 10px 0px 0px;}
 .yahoo2 a.prev:hover{border:#900000 2px solid;}
 
+.table {
+  font-size: 14px;
+}
+
+table.table-student {
+  width: 65%;
+}
+
+.table-center {
+  vertical-align: middle!important;
+  text-align: center!important;
+}
+
+.table-center.small {
+  width: 20%;
+}
+
+h2.h2-student {
+  margin-top:40px;
+  margin-bottom:30px;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -2088,6 +2110,7 @@ Layout: Footer
   padding: 20px 0;
   color: #ffffff;
   background: url(../img/logo/bottom_bg.png) no-repeat;
+  background-size: cover;
   border-top: 1px solid #000000;
   
 }
