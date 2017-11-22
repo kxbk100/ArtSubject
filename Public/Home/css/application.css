@@ -42,6 +42,10 @@ h2.h2-student {
   margin-bottom:30px;
 }
 
+.form-label {
+  font-size: 14px;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -168,6 +172,7 @@ Bootstrap Styles
 .container {
   position: relative;
 }
+
 select {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1094,10 +1099,11 @@ body.login {
   border-radius: 4px;
 }
 .account-container h1 {
-  margin-bottom: 1.3em;
+  margin-bottom: 0.5em;
   color: #263849;
   font-size: 30px;
 }
+
 .content {
   padding: 16px 28px 23px;
 }
@@ -1148,6 +1154,25 @@ body.login {
   line-height: 19px;
   text-shadow: 1px 1px 0px #fff;
 }
+
+span.tip {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.form-button button {
+  margin-top: 15px;
+}
+
+.form-button button:first-child {
+  margin-right: 80px;
+}
+
+.ycx {
+  background-color: #900000;
+}
+
 span.login-checkbox {
   float: left;
   margin-top: 31px;
@@ -1757,9 +1782,6 @@ body {
   height: 100%;
 }
 #wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
   margin: 0 auto -61px;
 }
 .push {
@@ -2106,7 +2128,7 @@ Layout: Content
 Layout: Footer
 
 ------------------------------------------------------------------- */
-#footer {
+.footer {
   padding: 20px 0;
   color: #ffffff;
   background: url(../img/logo/bottom_bg.png) no-repeat;
@@ -2114,15 +2136,20 @@ Layout: Footer
   border-top: 1px solid #000000;
   
 }
-#footer a {
+.footer a {
   color: #80a7cf;
 }
-#footer a:hover {
+.footer a:hover {
   color: #80a7cf;
   text-decoration: underline;
 }
-#footer #builtby {
+.footer #builtby {
   text-align: right;
+}
+
+.footer span {
+  display: block;
+  font-size:14px; 
 }
 /*------------------------------------------------------------------
  

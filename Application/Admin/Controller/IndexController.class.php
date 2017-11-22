@@ -6,7 +6,11 @@ class IndexController extends Controller {
 	
 	public function index(){
 		$this->display();
-	}
+    }
+    
+    public function infoEdit(){
+        $this -> display();
+    }
 
 	public function getInfo(){
 		$teacher_account = M("teacher_account");

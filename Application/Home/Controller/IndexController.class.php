@@ -35,7 +35,7 @@ class IndexController extends Controller {
 			}
 
 			if($result == 0){
-				$this->error('未查询到结果，请检查您的信息是否正确',U('Home/Index/index'));
+				$this->error('未查询到结果，请检查您的信息是否正确');
 			}else{
 
 				//TODO  验证身份证号是否对应，修改数据库电话号码
@@ -48,13 +48,13 @@ class IndexController extends Controller {
 					$this->assign('result',$result);
 					$this->display();
 				}else{
-					$this->error('身份证号错误',U('Home/Index/index'));
+					$this->error('身份证号错误');
 				}
 
 			}
 
 		}else{
-			$this->error('验证码错误',U('Home/Index/index'));
+			$this->error('验证码错误');
 		}
 	}
  

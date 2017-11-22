@@ -8,17 +8,13 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>学生信息</title>
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-
 	<link rel="stylesheet" href="{$Think.config.HOMETOOLS}css/bootstrap.css">
 	<link rel="stylesheet" href="{$Think.config.HOMETOOLS}css/bootstrap-responsive.css">
 	<link rel="stylesheet" href="{$Think.config.HOMETOOLS}css/application.css">
-
 	<script src="{$Think.config.HOMETOOLS}js/libs/modernizr-2.5.3.min.js"></script>
-
 </head>
 
 <body>
@@ -85,33 +81,46 @@
 						<button type="button" class="btn btn-primary" style="margin-bottom: 10px;" onclick="window.location.href='{$Think.config.goto}Admin/Index/download/id/{$year}'">下载表格</button>
 					</div>
 				</div>
-				<table class="table table-striped table-hover table-condensed table-bordered" align="center">
-					<thead>
-						<tr>
-							<th class="table-center">编号</th>
-							<th class="table-center">姓名</th>
-							<th class="table-center">学号</th>
-							<th class="table-center">专业班级</th>
-							<th class="table-center">电话</th>
-							<th class="table-center">身份证号</th>
-							<th class="table-center">查询情况</th>
-						</tr>
-					</thead>
-					<tbody>
-						<volist name="list" id="student">
+				<div class="table-responsive">
+					<table class="table table-striped table-hover table-condensed table-bordered">
+						<thead>
 							<tr>
-								<td class="table-center">{$student.id}</td>
-								<td class="table-center">{$student.name}</td>
-								<td class="table-center">{$student.student_id}</td>
-								<td class="table-center">{$student.major_class}</td>
-								<td class="table-center">{$student.phone}</td>
-								<td class="table-center">{$student.id_number}</td>
-								<td class="table-center"><if condition="$student.is_searched eq 1">已查询<else/>未查询</if></td>
+								<th class="table-center">编号</th>
+								<th class="table-center">姓名</th>
+								<th class="table-center">学号</th>
+								<th class="table-center">专业班级</th>
+								<th class="table-center">电话</th>
+								<th class="table-center">身份证号</th>
+								<th class="table-center">查询情况</th>
+								<th class="table-center">操作</th>
 							</tr>
-						</volist>
-					</tbody>
-				</table>
-
+						</thead>
+						<tbody>
+							<volist name="list" id="student">
+								<tr>
+									<td class="table-center">{$student.id}</td>
+									<td class="table-center">{$student.name}</td>
+									<td class="table-center">{$student.student_id}</td>
+									<td class="table-center">{$student.major_class}</td>
+									<td class="table-center">{$student.phone}</td>
+									<td class="table-center">{$student.id_number}</td>
+									<td class="table-center">
+										<if condition="$student.is_searched eq 1">
+										<span class="label label-default ycx">已查询</span>
+									<else/>
+										<span class="label label-default">未查询</span>
+									</if>
+									</td>
+									<td class="table-center">
+										<a href="#" target="_blank">
+											<span class="label label-default ycx">✎</span>
+										</a>
+									</td>
+								</tr>
+							</volist>
+						</tbody>
+					</table>
+				</div>
 				<br />
 				<div class="yahoo2 text-center">
 					{$page}
@@ -124,27 +133,13 @@
 
 	</div>
 
-
-	<div id="footer">
-
+	<footer class="footer">
 		<div class="container">
-
 			<div class="row">
-
-				<div style="text-align: center;font-size: 14px">版权所有：浙江科技学院艺术设计学院/服装学院 浙ICP备11051284号</div>
-
+				<span class="text-center">版权所有：浙江科技学院艺术设计学院/服装学院 浙ICP备11051284号</span>
 			</div>
-			<!-- /row -->
-
 		</div>
-		<!-- /container -->
-
-	</div>
-	<!-- /#footer -->
-
-
-
-
+	</footer>
 
 	<script src="{$Think.config.HOMETOOLS}js/libs/jquery-1.7.2.min.js"></script>
 	<script src="{$Think.config.HOMETOOLS}js/libs/jquery-ui-1.8.21.custom.min.js"></script>
